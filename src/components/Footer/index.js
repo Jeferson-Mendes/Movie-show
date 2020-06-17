@@ -1,7 +1,7 @@
 import React from "react";
 
-import "./footerStyle.css";
-import logoTMDb from '../assets/blue_square_2.svg';
+import "./style.css";
+import logoTMDb from '../../assets/blue_square_2.svg';
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
           <h2>Credits</h2>
           <img src={logoTMDb} alt="tmdb"/>
           <p>
-            Este produto usa a API TMDb, mas não é endossado ou certificado pelo TMDb.
+            This product uses the TMDb API but is not endorsed or certified by TMDb.
           </p>
         </div>
       </div>
