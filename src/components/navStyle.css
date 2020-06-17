@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #202040;
+}
+
+.title {
+  color: whitesmoke;
+  font-size: 1.6em;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.menu form input {
+  height: 30px;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  border: none;
+  background-color: #ececec;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.menu form input::-webkit-input-placeholder {
+  color: gray;
+}
+
+.menu form input:hover {
+  transform: scale(0.9);
+}
+
+.menu form button {
+  border: none;
+  border-radius: 0 8px 8px 0;
+  width: 40px;
+  height: 32px;
+  background-color: white;
+  font-weight: bold;
+}
+
+.menu form button:hover {
+  background-color: whitesmoke;
+}
