@@ -9,7 +9,8 @@ const MovieField = (props) => {
             <img className="movie-figure" src={ props.image ? `https://image.tmdb.org/t/p/w500/${props.image}` : no_image } alt="CardImage"/>
             <div className="details">
                 <h3>{props.movieTitle}</h3>
-                <p>Ver detalhes</p>
+                <h4>{props.release}</h4>
+                <p>Show details</p>
             </div>
         </div>
     )

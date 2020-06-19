@@ -1,0 +1,19 @@
+
+.pagination-content ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-content ul li {
+    list-style: none;
+    padding: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pagination-content ul .active{
+    background-color: orangered;
+    border-radius: 12px;
+    color: white;
+}

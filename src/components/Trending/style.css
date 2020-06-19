@@ -1,0 +1,27 @@
+
+.trending-content {
+    position: absolute;
+    background-color: #ececec;
+    width: 30%;
+    min-height: 50vh ;
+    left: 58em;
+    top: 8em;
+    border-radius: 10px;
+}
+
+.movies-week {
+    padding: 1em;
+}
+
+.movies-week h1 {
+    text-align: center;
+    color: #FFA07A;
+}
+
+.movies-week h3 {
+    color: gray;
+}
+
+.movies-week h3:hover {
+    color: #17223b;
+}

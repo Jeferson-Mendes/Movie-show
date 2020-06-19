@@ -1,26 +1,21 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .menu {
   display: flex;
-  height: 64px;
+  height: 74px;
   align-items: center;
   justify-content: space-around;
-  background-color: #202040;
+  background-color: #17223b;
 }
 
 .title {
   color: whitesmoke;
-  font-size: 1.6em;
+  font-size: 2em;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
 }
 
 .menu form input {
-  height: 30px;
+  height: 36px;
   border-radius: 8px 0 0 8px;
   outline: none;
   border: none;
@@ -28,6 +23,7 @@ body {
   text-align: center;
   color: black;
   font-weight: bold;
+  font-size: 1em;
 }
 
 .menu form input::-webkit-input-placeholder {
@@ -42,11 +38,24 @@ body {
   border: none;
   border-radius: 0 8px 8px 0;
   width: 40px;
-  height: 32px;
+  height: 38px;
   background-color: white;
   font-weight: bold;
 }
 
 .menu form button:hover {
   background-color: whitesmoke;
+}
+
+/* Genres */
+
+.genres-select {
+    background-color: gray;
+    width: 150px;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1em;
+    height: 38px;
+    border: none;
+    color: white;
 }
