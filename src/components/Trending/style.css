@@ -13,6 +13,10 @@
     padding: 1em;
 }
 
+.movies-week a {
+    text-decoration: none;
+}
+
 .movies-week h1 {
     text-align: center;
     color: #FFA07A;

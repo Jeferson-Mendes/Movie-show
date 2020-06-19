@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-detail {
+    background-color: #222831;
+    margin-bottom: 40px;
+}
+
+.nav-detail .title {  
+  padding: 1em; 
+  padding-left: 1em;  
+  color: whitesmoke;
+  font-size: 2em;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+/* MOVIE FIELD */
+
+.movie-detail-card {
+    display: flex;
+    width: 75%;
+    padding-right: 10px;
+    min-height: 60vh;
+    box-shadow: 0px 2px 4px darkorange;
+    margin-bottom: 14px;
+    border-radius: 20px;
+}
+
+.movie-detail-figure {
+    margin-top: 40px;
+    margin-left: 20px;
+    border-radius: 10px;
+    height: 282px;
+    width: 164%;
+    object-fit: scale-down;
+    object-position: top;
+}
+
+.details-movie {
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+.details-movie h3 {
+    color: #FF5733;
+}
+
+.details-movie h4 {
+    color: white;
+}
+
+.details-movie p {
+    color: gray;
+}

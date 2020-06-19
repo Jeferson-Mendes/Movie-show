@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import no_image from '../../assets/no_image.svg';
 
@@ -10,7 +11,7 @@ const MovieField = (props) => {
             <div className="details">
                 <h3>{props.movieTitle}</h3>
                 <h4>{props.release}</h4>
-                <p>Show details</p>
+               <Link to={`/detail/${props.movieId}`} > <p>Show details</p> </Link>
             </div>
         </div>
     )
