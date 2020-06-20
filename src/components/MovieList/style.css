@@ -46,3 +46,151 @@
 .details p {
     color: gray;
 }
+
+@media ( max-width: 900px) {
+    .movie-content .grid {
+        grid-template-columns: repeat(3, 180px);
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    .movie-figure {
+        height: 240px;
+        width: 180px;
+    }
+}
+
+@media ( max-width: 800px) {
+    .movie-content .grid {
+        grid-template-columns: repeat(2, 200px);
+        margin-left: 10px;
+    }
+
+    .movie-figure {
+        height: 260px;
+        width: 200px;
+    }
+}
+
+@media ( max-width: 720px) {
+    .movie-content .grid {
+        grid-template-columns: repeat(2, 180px);
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    .movie-figure {
+        height: 240px;
+        width: 180px;
+    }
+
+    .details h3 {
+        font-size: 1.2em;
+    }
+
+    .details h4 {
+        font-size: 1em;
+    }
+
+    .details p {
+        font-size: 1.2em;
+    }
+}
+
+@media ( max-width: 630px) {
+    .movie-content .grid {
+        grid-template-columns: 160px 160px;
+        margin-left: 20px;
+    }
+
+    .movie-figure {
+        width: 160px;
+    }
+}
+
+@media ( max-width: 590px) {
+    .movie-content .grid {
+        grid-template-columns: 140px 140px;
+    }
+
+    .movie-figure {
+        height: 240px;
+        width: 140px;
+    }
+}
+
+@media ( max-width: 530px) {
+    .movie-content .grid {
+        grid-template-columns: repeat(3, 140px);
+    }
+}
+
+@media ( max-width: 500px) {
+    .movie-content .grid {
+        grid-template-columns: 190px 190px;
+    }
+
+    .movie-figure {
+        height: 260px;
+        width: 190px;
+    }
+
+    .details h3 {
+        font-size: 1.2em;
+    }
+
+    .details h4 {
+        font-size: 0.8em;
+    }
+
+    .details p {
+        font-size: 1em;
+    }
+}
+
+@media ( max-width: 450px) {
+    .movie-content .grid {
+        grid-template-columns: 170px 170px;
+    }
+
+    .movie-figure {
+        width: 170px;
+    }
+}
+
+@media ( max-width: 410px) {
+
+    .movie-content .grid {
+        grid-template-columns: 160px 160px;
+        margin-left: 4px;
+    }
+
+    .movie-figure {
+        width: 160px;
+    }
+}
+
+@media ( max-width: 380px) {
+
+    .movie-content .grid {
+        grid-template-columns: 140px 140px;
+        margin-left: 24px;
+    }
+
+    .movie-figure {
+        width: 140px;
+    }
+}
+
+@media ( max-width: 350px) {
+
+    .movie-content .grid {
+        grid-template-columns: 240px;
+        margin-left: 44px;
+    }
+
+    .movie-figure {
+        height: 340px;
+        width: 240px;
+    }
+}

@@ -59,3 +59,17 @@
     border: none;
     color: white;
 }
+
+/*@media(max-width:710px) {
+  .menu form {
+    position: absolute;
+    top: 90px;
+  }
+}*/
+
+@media(max-width:630px) {
+  .menu form {
+    position: absolute;
+    top: 90px;
+  }
+}

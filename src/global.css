@@ -13,3 +13,35 @@ body {
     color: #FF5733;
     padding-top: 2em;    
 }
+
+@media (max-width: 720px) {
+    .titleMovieList {
+        margin-top: 40px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 630px) {
+    .titleMovieList {
+        padding-left: 20px;
+    }
+}
+
+
+@media (max-width: 410px) {
+    .titleMovieList {
+        padding-left: 4px;
+    }
+}
+
+@media (max-width: 380px) {
+    .titleMovieList {
+        padding-left: 24px;
+    }
+}
+
+@media (max-width: 350px) {
+    .titleMovieList {
+        padding-left: 44px;
+    }
+}
