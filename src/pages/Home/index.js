@@ -7,7 +7,7 @@ import Trending from '../../components/Trending/index';
 import Pagination from '../../components/Pagination/index';
 
 
-export default function App() {
+const Home = () => {
 
   const apiKey = process.env.REACT_APP_KEY
 
@@ -75,7 +75,7 @@ export default function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" >
       <Nav 
         submit={handleSubmit}
         inputChange={handleInputChange}
@@ -83,7 +83,7 @@ export default function App() {
         genreChange={handleSelectGenreChange}
          />
 
-      <h2 className='titleMovieList'>
+      <h2 className='titleMovieList' data-tesid='home-field' >
         { title.length === 0 ? 'MOST POPULAR:' : `RESULTS TO: "${title}"` }
       </h2>
 
@@ -96,3 +96,5 @@ export default function App() {
     </div>
   );
 }
+
+export default Home;
