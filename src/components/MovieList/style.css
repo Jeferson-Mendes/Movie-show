@@ -25,6 +25,12 @@
     width: 200px;
     object-fit: cover;
     object-position: center;
+    transition: 600ms;
+}
+
+.movie-figure:active,
+.movie-figure:hover {
+    transform: scale(0.9);
 }
 
 .details {
