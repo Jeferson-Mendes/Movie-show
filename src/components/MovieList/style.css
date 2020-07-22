@@ -1,14 +1,13 @@
 .movie-content {
     min-height: 145vh;
+    padding: 20px;
 }
 
 .movie-content .grid{
-    padding-bottom: 20px;
-    padding-left: 45px;
     display: grid;
     align-items: center;
-    justify-content: flex-start;
-    grid-template-columns: repeat(4,200px);
+    justify-content: center;
+    grid-template-columns: repeat(6,200px);
     gap: 1em;
 }
 
@@ -16,7 +15,6 @@
 
 .movie-card {
     width: 100%;
-    min-height: 26em;
     box-shadow: 0px 6px 6px #543864;
 }
 
@@ -31,26 +29,6 @@
 .movie-figure:active,
 .movie-figure:hover {
     transform: scale(0.9);
-}
-
-.details {
-    padding: 2px 16px;
-}
-
-.details h3 {
-    color: #FF5733;
-}
-
-.details h4 {
-    color: white;
-}
-
-.details a {
-    text-decoration: none;
-}
-
-.details p {
-    color: gray;
 }
 
 @media ( max-width: 900px) {

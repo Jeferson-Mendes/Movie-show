@@ -22,18 +22,28 @@ body {
 
 .movie-detail-card {
     display: flex;
-    min-height: 60vh;
+    min-height: 100vh;
     border-radius: 20px;
 }
 
 .movie-detail-figure {
     margin-top: 40px;
-    margin-left: 20px;
     border-radius: 10px;
-    height: 280px;
-    width: 500px;
+    height: 340px;
+    width: 240px;
     object-fit: scale-down;
     object-position: top;
+}
+
+.movie-detail-backdrop {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.4;
+    z-index: -1;
+    right: 0;
+    position: absolute;
 }
 
 .details-movie {

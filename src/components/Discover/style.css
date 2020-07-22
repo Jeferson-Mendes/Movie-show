@@ -1,0 +1,74 @@
+
+.popular-container {
+    overflow: auto;
+    white-space: nowrap;
+    margin: 20px 0 40px 20px;
+    border-radius: 8px 0 0 8px;
+    
+
+}
+
+.discover-title {
+    margin: 14px 0 5px 10px;
+    font-size: 1.4em;
+    color: #f08a5d;
+}
+
+/* SCROLLBAR STYLE */
+
+::-webkit-scrollbar{
+    height: 8px;
+    width: 8px;
+    background: gray;
+}
+::-webkit-scrollbar-thumb:horizontal{
+    background: rgb(0, 0, 0, 0.8);
+}
+
+.popular-container .movie-container {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: 240px;
+}
+
+.popular-container .movie-container .vote_25-50 {
+    position: relative;
+    color: cornsilk;
+    width: 34px;
+    height: 34px;
+    top: -240px;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.4);
+    border: 6px solid rgb(0, 0, 0, 0.4);
+    border-radius: 50%;
+    border-top: 6px solid #ff9234;
+    border-right: 6px solid #ff9234;
+}
+
+.popular-container .movie-container .vote_75-10 {
+    position: relative;
+    color: cornsilk;
+    width: 34px;
+    height: 34px;
+    top: -240px;
+    text-align: center;
+
+    background-color: rgb(0, 0, 0, 0.4);
+    border: 6px solid #79d70f;
+    border-radius: 50%;
+}
+
+.popular-container .movie-container  p {
+    margin: 20%;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.popular-container .movie-container img {
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+}

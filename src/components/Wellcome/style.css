@@ -1,0 +1,48 @@
+
+.wellcome-container{
+    width: 98vw;
+    margin: auto;
+    height: 300px;
+    background-image: url('https://image.tmdb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/qsxhnirlp7y4Ae9bd11oYJSX59j.jpg');
+    background-size: cover;
+}
+
+.wellcome-container .wellcome-title {
+    color: #f08a5d;
+    font-size: 2.4em;
+    padding: 40px 0 0 40px;
+}
+
+.wellcome-container p {
+    padding-left: 40px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.wellcome-container .input-search {
+    display: flex;
+    justify-content: center;
+}
+
+.wellcome-container .input-search input {
+    position: absolute;
+    width: 540px;
+    height: 28px;
+    font-size: 1em;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.wellcome-container .input-search button {
+    position: relative;
+    top: 10px;
+    left: 240px;
+    border: none;
+    background-color: white;
+    color: orangered;
+    font-size: 1.4em;
+}

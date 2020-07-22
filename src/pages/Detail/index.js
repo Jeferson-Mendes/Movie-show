@@ -35,7 +35,8 @@ const Detail = (props) => {
         </div>
         <Link to='/' style={{marginLeft:20}} > <FiArrowLeft size={30} color="#FF5733" /> </Link>
             <div className="movie-detail-card" >
-                <img className="movie-detail-figure" src={ movie.backdrop_path ? `https://image.tmdb.org/t/p/w500/${movie.backdrop_path}` : no_image } alt='imageDetail' />
+                <img className="movie-detail-figure" src={ movie.poster_path ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}` : no_image } alt='imageDetail' />
+                <img className="movie-detail-backdrop" src={ movie.backdrop_path ? `https://image.tmdb.org/t/p/w500/${movie.backdrop_path}` : 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80' } alt='imageDetail' />
                 <div className="details-movie">
 
                     <select className="setLanguage" onChange={handleChangeLanguage} >

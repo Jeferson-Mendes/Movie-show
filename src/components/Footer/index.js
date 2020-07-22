@@ -11,7 +11,7 @@ const Footer = () => {
           <h2>Credits</h2>
           <img src={logoTMDb} alt="tmdb"/>
           <p>
-            This product uses the TMDb API but is not endorsed or certified by TMDb.
+            This product uses the  <a href='https://www.themoviedb.org/' > TMDb API </a>but is not endorsed or certified by TMDb.
           </p>
         </div>
       </div>

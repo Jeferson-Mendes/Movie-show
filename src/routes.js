@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route ,Switch } from 'react-router-dom';
 
-import Home from './pages/Home';
+import Home from './pages/New home';
+import SearchResult from './pages/SearchResult';
 import Detail from './pages/Detail';
 
 export default function Routes() {
@@ -9,7 +10,8 @@ export default function Routes() {
         <BrowserRouter>
             <Switch>
                 <Route path={'/'} exact component={Home} />
-                <Route path={'/detail/:id'} exact component={Detail} />
+                <Route path={'/movies'} component={SearchResult} />
+                <Route path={'/detail/:id'} component={Detail} />
             </Switch>
         </BrowserRouter>
     )
