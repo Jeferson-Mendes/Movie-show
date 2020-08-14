@@ -1,0 +1,19 @@
+
+.trailers {
+    margin-left: 8px;
+}
+
+.trailers h2 {
+    color: #FF5733;
+    margin-left: 20px;
+}
+
+.trailers ul li {
+    list-style: none;
+    padding: 0.2rem;
+}
+
+.trailers ul li a {
+    text-decoration: none;
+    color: #c9c9c9;
+}

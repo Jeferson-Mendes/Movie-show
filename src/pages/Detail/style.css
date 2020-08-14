@@ -22,7 +22,7 @@ body {
 
 .movie-detail-card {
     display: flex;
-    min-height: 100vh;
+    min-height: 58vh;
     border-radius: 20px;
 }
 
@@ -37,7 +37,7 @@ body {
 
 .movie-detail-backdrop {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     object-fit: cover;
     object-position: center;
     opacity: 0.4;
@@ -69,7 +69,7 @@ body {
 }
 
 .details-movie p {
-    color: gray;
+    color: #fff;
     font-size: 1em;
     font-weight: bold;
 }

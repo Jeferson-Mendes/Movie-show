@@ -1,15 +1,15 @@
 
-.popular-container {
+.discover-container {
     overflow: auto;
     white-space: nowrap;
     margin: 20px 0 40px 20px;
     border-radius: 8px 0 0 8px;
-    
 
+    min-height: 55vh;
 }
 
 .discover-title {
-    margin: 14px 0 5px 10px;
+    margin: 10px 0 5px 10px;
     font-size: 1.4em;
     color: #f08a5d;
 }
@@ -25,14 +25,14 @@
     background: rgb(0, 0, 0, 0.8);
 }
 
-.popular-container .movie-container {
+.discover-container .movie-container {
     display: inline-block;
     margin: 10px;
     width: 200px;
     height: 240px;
 }
 
-.popular-container .movie-container .vote_25-50 {
+.discover-container .movie-container .vote_25-50 {
     position: relative;
     color: cornsilk;
     width: 34px;
@@ -46,7 +46,7 @@
     border-right: 6px solid #ff9234;
 }
 
-.popular-container .movie-container .vote_75-10 {
+.discover-container .movie-container .vote_75-10 {
     position: relative;
     color: cornsilk;
     width: 34px;
@@ -59,14 +59,14 @@
     border-radius: 50%;
 }
 
-.popular-container .movie-container  p {
+.discover-container .movie-container  p {
     margin: 20%;
     font-weight: bold;
     font-size: 0.8em;
     text-align: center;
 }
 
-.popular-container .movie-container img {
+.discover-container .movie-container img {
     width: 200px;
     height: 240px;
     object-fit: cover;

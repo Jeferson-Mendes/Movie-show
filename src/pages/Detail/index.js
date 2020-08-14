@@ -3,6 +3,8 @@ import { FiArrowLeft } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 import Footer from '../../components/Footer/index';
+import Video from '../Detail/Components/Video';
+import Discover from '../../components/Discover';
 
 import no_image from '../../assets/no_image.svg';
 
@@ -13,8 +15,11 @@ const Detail = (props) => {
     const apiKey = process.env.REACT_APP_KEY
     
     const [movie, setMovie] = useState({});
+    const [movieVideos, setMovieVideos] = useState([]);
+    const [similarMovie, setSimilarMovie] = useState([]);
     const [language, setLanguage] = useState('en-US');
 
+    // Get movie who movie ID is equal to the id in the url
     useEffect(()=>{
         fetch(`https://api.themoviedb.org/3/movie/${MovieId}?api_key=${apiKey}&language=${language}`)
         .then(data => data.json())
@@ -23,6 +28,28 @@ const Detail = (props) => {
             setMovie({...data})
         })
     },[apiKey, language, MovieId])
+
+    // Get Movie Videos
+    useEffect(()=>{
+        fetch(`https://api.themoviedb.org/3/movie/${MovieId}/videos?api_key=${apiKey}&language=en-US&page=1`)
+        .then(data => data.json())
+        .then(data => {
+            console.log('movie videos => ', data.results)
+            setMovieVideos([...data.results])
+        })
+    },[apiKey, language, MovieId])
+
+
+    // Get similar movies
+    useEffect(()=>{
+        fetch(`https://api.themoviedb.org/3/movie/${MovieId}/similar?api_key=${apiKey}&language=en-US&page=1`)
+        .then(data => data.json())
+        .then(data => {
+            console.log(data.results)
+            setSimilarMovie([...data.results])
+        })
+    },[apiKey, language, MovieId])
+
 
     const handleChangeLanguage = (event) => {
         setLanguage(event.target.value)
@@ -40,7 +67,7 @@ const Detail = (props) => {
                 <div className="details-movie">
 
                     <select className="setLanguage" onChange={handleChangeLanguage} >
-                        <option value="">Idioma</option>    
+                        <option value="">Language</option>    
                         <option value="pt-BR">Português</option>
                         <option value="en-US">Inglês</option>
                     </select>
@@ -49,8 +76,12 @@ const Detail = (props) => {
                     <h4>{movie.release_date}</h4>
                     <p>{movie.overview}</p>
                 </div>
-            </div>
 
+            </div>
+        <Video trailerVideo={movieVideos} />
+
+        {similarMovie.length !== 0 ? <Discover movies={similarMovie} title='Similar Movies' /> : <p></p> }
+        
         <Footer/>
         </>
     )

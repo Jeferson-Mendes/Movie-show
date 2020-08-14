@@ -25,13 +25,7 @@ const Nav = (props) => {
 
             ))}
         </select>
-
-        <form onSubmit={props.submit} >
-          <input data-testid='form-field' type="text" placeholder="Search here" onChange={props.inputChange} />
-          <button data-testid='form-button' type='submit' >
-            <FiSearch/>
-          </button>
-        </form>
+        
       </nav>
     </div>
   );

@@ -93,7 +93,6 @@ const Home = () => {
     <div className="App" >
 
       <Nav 
-        submit={handleSubmit}
         inputChange={handleInputChange}
         genre={genres}
         genreChange={handleSelectGenreChange}
